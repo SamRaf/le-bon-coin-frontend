@@ -1,0 +1,24 @@
+.searching {
+  display: flex;
+  position: absolute;
+  width: 810px;
+  height: 130px;
+  left: 315px;
+  top: 185px;
+  background: #ffffff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+}
+
+.buttonS {
+  background: #4183d7;
+  border-radius: 5px;
+}
+
+.ellipse {
+  width: auto;
+  height: 203px;
+  background: #f56b2a;
+}

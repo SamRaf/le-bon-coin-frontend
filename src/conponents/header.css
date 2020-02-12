@@ -1,0 +1,7 @@
+.header-logo {
+  display: flex;
+}
+#header {
+  display: flex;
+  align-items: center;
+}
