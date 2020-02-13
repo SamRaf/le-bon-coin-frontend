@@ -1,12 +1,13 @@
 import React from "react";
+import "./SingleOffer";
 
 function SingleOffer(props) {
   return (
-    <div>
+    <div className="singleOffer">
       <div>
         {props.offer.pictures[0] ? (
           <img
-            className=""
+            className="single pictureOffer"
             src={props.offer.pictures[0]}
             alt="photo de description"
           ></img>
@@ -14,11 +15,15 @@ function SingleOffer(props) {
           ""
         )}
       </div>
-      <div>
-        <p>{props.offer.title}</p>
+      <div className="gauche">
+        <div className="single">
+          <p>{props.offer.title}</p>
+        </div>
+        <div className="single">
+          {props.offer.price ? <p>{props.offer.price}€</p> : ""}
+        </div>
+        <div className="single">{props.offer.created}</div>
       </div>
-      <div>{props.offer.price ? <p>{props.offer.price}€</p> : ""}</div>
-      <div>{new Date(props.offer.created).toDateString}</div>
     </div>
   );
 }

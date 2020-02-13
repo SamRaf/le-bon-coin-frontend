@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "../conponents/Search";
 import SingleOffer from "../conponents/SingleOffer";
 import axios from "axios";
+import "../conponents/SingleOffer.css";
 
 function Offers() {
   const [data, setData] = useState({});

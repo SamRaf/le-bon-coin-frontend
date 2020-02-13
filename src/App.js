@@ -14,7 +14,7 @@ function App() {
         </div>
         <Router>
           <Switch>
-            <Route path="/product/:id">{/* <Product /> */}</Route>
+            <Route path="/offer/:id">{/* <Product /> */}</Route>
             <Route path="/">
               <Offers />
             </Route>
