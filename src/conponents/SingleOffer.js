@@ -1,5 +1,6 @@
 import React from "react";
 import "./SingleOffer";
+import noImage from "../images/noImage.png";
 
 function SingleOffer(props) {
   return (
@@ -12,7 +13,11 @@ function SingleOffer(props) {
             alt="photo de description"
           ></img>
         ) : (
-          ""
+          <img
+            className="single pictureOffer"
+            src={noImage}
+            alt="pas d'image"
+          />
         )}
       </div>
       <div className="gauche">

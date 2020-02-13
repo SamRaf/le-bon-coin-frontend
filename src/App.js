@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./conponents/Header";
 
 import "./App.css";
+import Offer from "./containers/Offer";
 import Offers from "./containers/Offers";
 
 function App() {
@@ -14,8 +15,12 @@ function App() {
         </div>
         <Router>
           <Switch>
-            <Route path="/offer/:id">{/* <Product /> */}</Route>
-            <Route path="/">
+            <Route path="/offer/:id">
+              {/* <Product /> */}
+              <Offer />
+            </Route>
+
+            <Route path="/offers">
               <Offers />
             </Route>
           </Switch>

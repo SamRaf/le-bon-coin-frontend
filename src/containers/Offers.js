@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../conponents/Search";
 import SingleOffer from "../conponents/SingleOffer";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "../conponents/SingleOffer.css";
 
@@ -35,8 +36,10 @@ function Offers() {
             <div>
               {data.offers.map((offer, index) => {
                 return (
-                  <div key={index}>
-                    <SingleOffer offer={offer} />
+                  <div key={offer._id}>
+                    <Link to={"/offer/" + offer._id}>
+                      <SingleOffer offer={offer} />
+                    </Link>
                   </div>
                 );
               })}
